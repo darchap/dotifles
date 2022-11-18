@@ -24,7 +24,7 @@ alias egrep='egrep --color=auto'
 alias code='codium'
 
 # OS
-# Force update the whole system to the latest and greatest 
-alias upgrade='sudo dnf upgrade --best --allowerasing --refresh -y'
+# Force update the whole system to the latest and greatest && also upgrade flatpak
+alias upgrade='sudo dnf upgrade --best --allowerasing --refresh -y && flatpak upgrade -y'
 
 
