@@ -1,5 +1,8 @@
 [user]
 	email = 113114289+darchap@users.noreply.github.com
 	name = darchap
+	signingkey = ~/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
