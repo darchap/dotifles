@@ -27,4 +27,5 @@ alias code='codium'
 # Force update the whole system to the latest and greatest && also upgrade flatpak
 alias upgrade='sudo dnf upgrade --best --allowerasing --refresh -y && flatpak upgrade -y'
 
-
+#Git
+alias undolastcommit='git reset --hard HEAD~1 && git push origin -f'
