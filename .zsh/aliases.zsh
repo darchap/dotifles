@@ -5,8 +5,8 @@ alias ll='ls -AhlFo --color --group-directories-first'
 alias findsymlinks='find . -type l'
 alias findhere='find . -print | grep -i'
 alias grubup="sudo update-grub"
-alias tarnow='tar -acf '
-alias untar='tar -zxvf '
+alias tarnow='tar -acf'
+alias untar='tar -zxvf'
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 alias ..='cd ..'
@@ -22,10 +22,6 @@ alias egrep='egrep --color=auto'
 
 # Vscode
 alias code='codium'
-
-# OS
-# Force update the whole system to the latest and greatest && also upgrade flatpak
-alias upgrade='sudo dnf upgrade --best --allowerasing --refresh -y && flatpak upgrade -y'
 
 #Git
 alias undolastcommit='git reset --hard HEAD~1 && git push origin -f'
