@@ -1,12 +1,11 @@
 # Find out which distribution we are running on
-LFILE="/etc/os-release"
-MFILE="/System/Library/CoreServices/SystemVersion.plist"
-if [[ -f $LFILE ]]; then
-  _distro=$(awk '/^ID=/' /etc/os-release | awk -F'=' '{ print tolower($2) }')
-elif [[ -f $MFILE ]]; then
-  _distro="macos"
+if [[ -f '/System/Library/CoreServices/SystemVersion.plist' ]]; then
+  distro_id='macos'
+else
+  distro_id=$(cat /etc/*-release | grep -E '^ID=.*' | awk -F'=' '{ print tolower($2) }')
 fi
-case $_distro in
+
+case $distro_id in
     *kali*)                  ICON="ﴣ";;
     *arch*)                  ICON="";;
     *debian*)                ICON="";;
