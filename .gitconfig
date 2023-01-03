@@ -6,3 +6,7 @@
 	defaultBranch = main
 [gpg]
 	format = ssh
+[help]
+	# Automatically correct and execute mistyped commands.
+	autocorrect = 50
+
