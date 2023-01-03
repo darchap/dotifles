@@ -25,3 +25,8 @@ alias code='codium'
 
 #Git
 alias undolastcommit='git reset --hard HEAD~1 && git push origin -f'
+alias filesbeforecommit='git diff --name-only --staged'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+# Remove `+` and `-` from start of diff lines; just rely upon color.
+alias gdiff='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
+alias gstatus='git status -sb'
