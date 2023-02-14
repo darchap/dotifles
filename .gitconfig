@@ -10,3 +10,5 @@
 	# Automatically correct and execute mistyped commands.
 	autocorrect = 50
 
+[core]
+	excludesfile = ~/.gitignore
