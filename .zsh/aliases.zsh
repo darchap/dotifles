@@ -21,7 +21,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Vscode
-alias code='codium'
+#alias code='codium'
 
 #Git
 alias undolastcommit='git reset --hard HEAD~1 && git push origin -f'
