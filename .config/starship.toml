@@ -96,7 +96,13 @@ disabled = true
 [python]
 symbol = " "
 python_binary = "python3"
-disabled = true
+#disabled = true
+#format = 'via [${symbol} (${version} )(\($virtualenv\) )]($style)'
+#style = "bold yellow"
+#pyenv_prefix = "venv "
+#python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+#detect_extensions = ["py"]
+#version_format = "v${raw}"
 
 [nodejs]
 format = "via [ $version](bold green) "
