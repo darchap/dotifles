@@ -1,0 +1,23 @@
+line-length = 120
+select = ["ALL"]
+ignore = ["W191"]
+extend-safe-fixes = ["D205", "E402", "COM812"]
+fixable = ["ALL"]
+
+[format]
+quote-style = "double"
+indent-style = "tab"
+#skip-magic-trailing-comma = true
+
+[lint.flake8-quotes]
+inline-quotes = "double"
+
+[lint.pydocstyle]
+convention = "pep257"
+
+[lint.isort]
+case-sensitive = true
+combine-as-imports = true
+force-single-line = true
+# Use a single line after each import block.
+lines-after-imports = 2
